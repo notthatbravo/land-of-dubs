@@ -1,0 +1,117 @@
+section.login-container {
+    padding: 0;
+    height: 100vh;
+    max-height: 100vh;
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    div.left-column {
+        flex: 30%;
+        padding-top: 2%;
+        background: $bluish;
+
+        img[alt = "Logo"] {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        img[alt = "Illustration"] {
+            width: 100%;
+            margin-top: 30%;
+        }
+    }
+
+    div.right-column {
+        flex: 70%;
+        padding: 5% 10% 0;
+
+        a[href = "../home"] {
+            float: right;
+        }
+
+        h2 {
+            margin-top: 10%;
+            color: $bluish;
+            font-family: $lato;
+        }
+
+        p {
+            color: gray;
+        }
+
+        form {
+            margin-top: 5%;
+
+            label {
+                cursor: pointer;
+            }
+
+            input {
+                display: block;
+                width: 80%;
+                height: 3em;
+                margin: 1% 0 5%;
+                padding: 2.5%;
+                transition: 0.3s ease-in-out;
+            }
+
+            input:hover {
+                border: 1px solid $bluish;
+            }
+
+            button {
+                width: 40%;
+            }
+
+            p {
+                margin: 2% 0;
+                color: initial;
+
+                a {
+                    color: $reddish;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 850px) {
+    section.login-container {
+        div.left-column {
+            display: none;
+        }
+
+        div.right-column {
+            h2 {
+                margin-top: 20%;
+            }
+            form {
+                button {
+                    width: 60%;
+                    margin-bottom: 10%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    section.login-container {
+        div.right-column {
+            form {
+                input {
+                    width: 100%;
+                }
+
+                button {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
