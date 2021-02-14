@@ -109,6 +109,9 @@ section.login-container {
         background-color: #181f22;
         background-image: $login-signup-mobile-bg;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: unset;
+
         div.left-column {
             display: none;
         }
@@ -119,9 +122,19 @@ section.login-container {
                 color: #fff;
             }
             form {
+                input {
+                    border: 0;
+                }
                 button {
                     width: 60%;
                     margin-bottom: 10%;
+                    color: #fff;
+                }
+
+                p {
+                    a {
+                        color: #fff;
+                    }
                 }
             }
         }
