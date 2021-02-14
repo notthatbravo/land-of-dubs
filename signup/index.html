@@ -31,10 +31,10 @@
                 <div class="right-column">
                     <a href="../home">
                         <i class="fas fa-long-arrow-alt-left"></i>
-                        Back to main
+                        Go Home
                     </a>
 
-                    <h2>Hey there</h2>
+                    <h2>Hey there!</h2>
                     <p>Signup to upload files, make comments and put out requests.</p>
 
                     <form action="" method="post">
@@ -44,11 +44,16 @@
                         <label for="email">Email Address</label>
                         <input type="email" name="email" id="email" placeholder="thelandofdubs@example.com" required>
 
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="password123" autocomplete="new-password" required>
+                        <div class="password-container">
+                            <input type="password" name="password" id="password" class="password-input" placeholder="password123" autocomplete="new-password" required>
+                            <i class="far fa-eye" id="toggle-show-password"></i>
+                        </div>
 
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password" placeholder="What you typed over there" required>
+                        <div class="password-container">
+                            <input type="password" name="confirm-password" id="confirm-password" class="password-input" placeholder="What you typed over there" required>
+                            <i class="far fa-eye" id="toggle-show-password"></i>
+                        </div>
 
                         <button type="submit" name="button">Start Dubbing</button>
 

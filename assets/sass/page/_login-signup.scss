@@ -50,7 +50,8 @@ section.login-container {
                 cursor: pointer;
             }
 
-            input {
+            input,
+            div.password-container {
                 display: block;
                 width: 80%;
                 height: 3em;
@@ -59,8 +60,31 @@ section.login-container {
                 transition: 0.3s ease-in-out;
             }
 
-            input:hover {
+            input:hover,
+            div.password-container {
                 border: 1px solid $bluish;
+            }
+
+            div.password-container {
+                padding: 0;
+                padding-right: 2.5%;
+                input {
+                    display: inline-block;
+                    width: 95%;
+                    height: 100%;
+                    margin: 0;
+                    border: 0;
+                }
+
+                input:hover {
+                    border: 0;
+                    outline: none;
+                }
+
+                i {
+                    cursor: pointer;
+                    transition: 0.3s ease-in-out;
+                }
             }
 
             button {
@@ -82,6 +106,9 @@ section.login-container {
 
 @media (max-width: 850px) {
     section.login-container {
+        background-color: #181f22;
+        background-image: $login-signup-mobile-bg;
+        background-size: cover;
         div.left-column {
             display: none;
         }
@@ -89,6 +116,7 @@ section.login-container {
         div.right-column {
             h2 {
                 margin-top: 20%;
+                color: #fff;
             }
             form {
                 button {
@@ -104,8 +132,16 @@ section.login-container {
     section.login-container {
         div.right-column {
             form {
-                input {
+                input,
+                div.password-container {
                     width: 100%;
+                    background: #fff;
+                }
+
+                div.password-container {
+                    input {
+                        width: 90%;
+                    }
                 }
 
                 button {

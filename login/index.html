@@ -31,10 +31,10 @@
                 <div class="right-column">
                     <a href="../home">
                         <i class="fas fa-long-arrow-alt-left"></i>
-                        Back to main
+                        Go Home
                     </a>
 
-                    <h2>Welcome back</h2>
+                    <h2>Welcome back!</h2>
                     <p>Login to upload, comment and make requests.</p>
 
                     <form action="" method="post">
@@ -42,7 +42,11 @@
                         <input type="text" name="uname-or-email" id="uname-or-email" placeholder="thelandofdubs@example.com, zubs" autocomplete="username" required>
 
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="password123" autocomplete="current-password" required>
+
+                        <div class="password-container">
+                            <input type="password" name="password" id="password" class="password-input" placeholder="password123" autocomplete="current-password" required>
+                            <i class="far fa-eye" id="toggle-show-password"></i>
+                        </div>
 
                         <button type="submit" name="button">Continue Dubbing</button>
 
@@ -52,6 +56,6 @@
                 </div>
         </section>
 
-        <script src="../assets/script.js"></script>
+        <script src="../assets/js/login-signup.js"></script>
     </body>
 </html>

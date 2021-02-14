@@ -1,3 +1,5 @@
+
+// Mobile Nav Toggle
 let menuButton = document.querySelector(".hamburger-icon");
 let closeButton = document.querySelector(".close-icon");
 let mobileNavMenu = document.querySelector(".desktop-nav");
