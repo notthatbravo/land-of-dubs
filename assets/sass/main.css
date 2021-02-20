@@ -406,5 +406,67 @@ section.login-container div.right-column form div.password-container {
     width: 80%;
   }
 }
+section.forgot-password-container {
+  position: relative;
+  height: 100vh;
+  padding: 10%;
+  padding-top: 5%;
+  background: #DB143B;
+  text-align: center;
+}
+section.forgot-password-container h1 {
+  color: #fff;
+  font-size: 3em;
+}
+section.forgot-password-container h2 {
+  font-size: 1.3em;
+}
+section.forgot-password-container form {
+  width: 40%;
+  margin: 5% auto 0;
+  padding: 5%;
+  background: #fff;
+}
+section.forgot-password-container form i {
+  color: #DB143B;
+  font-size: 800%;
+  margin-bottom: 5%;
+}
+section.forgot-password-container form input {
+  width: 100%;
+  height: 3em;
+  padding: 2.5%;
+}
+section.forgot-password-container form button {
+  width: 60%;
+  margin: 5% 0;
+}
+section.forgot-password-container form a {
+  display: block;
+  color: #DB143B;
+  font-size: 0.8em;
+}
+section.forgot-password-container form a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  section.forgot-password-container {
+    padding-top: 10%;
+  }
+  section.forgot-password-container h1 {
+    font-size: 1.6em;
+  }
+  section.forgot-password-container h2 {
+    font-size: 1.2em;
+  }
+  section.forgot-password-container form {
+    width: 100%;
+    margin-top: 10%;
+  }
+  section.forgot-password-container form i {
+    font-size: 500%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
