@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1, user-scalable = 0">
+        <meta name="description" content="Join the Land of Dubs | The best University solution">
+        <meta name="keywords" content="university, solution, maths, course, dubs, answer">
+        <meta name="theme-color" content="#334349">
+
+        <title>The Land of Dubs | Signup</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!-- Icons from FontAwesome -->
+        <script src="https://kit.fontawesome.com/16160946ec.js" crossorigin="anonymous"></script>
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="/sass/main.css">
+    </head>
+
+    <body>
+
+        <section class="login-container flex">
+                <div class="left-column">
+                    <img src="/images/logo.png" alt="Logo">
+
+                    <img src="/images/login-signup-img.png" alt="Illustration">
+                </div>
+
+                <div class="right-column">
+                    <a href="../home">
+                        <i class="fas fa-long-arrow-alt-left"></i>
+                        Go Home
+                    </a>
+
+                    <h2>Hey there!</h2>
+                    <p>Signup to upload files, make comments and put out requests.</p>
+
+                    <form action="" method="post">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Username (zubs, regedit, bravo)" autocomplete="username" required>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="thelandofdubs@example.com" required>
+
+                        <label for="password">Password</label>
+                        <div class="password-container">
+                            <input type="password" name="password" id="password" class="password-input" placeholder="password123" autocomplete="new-password" required>
+                            <i class="far fa-eye" id="toggle-show-password"></i>
+                        </div>
+
+                        <label for="confirm-password">Confirm Password</label>
+                        <div class="password-container">
+                            <input type="password" name="confirm-password" id="confirm-password" class="password-input" placeholder="What you typed over there" required>
+                            <i class="far fa-eye" id="toggle-show-password"></i>
+                        </div>
+
+                        <button type="submit" name="button">Start Dubbing</button>
+
+                        <p>Already have an account? <a href="../login">Login</a></p>
+                    </form>
+                </div>
+        </section>
+
+        <script src="/js/login-signup.js"></script>
+    </body>
+</html>
